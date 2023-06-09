@@ -25,7 +25,7 @@ const Cart: React.FC = () => {
     0
   );
 
-  const pay = new VePay("0:609ba8461a0cced925d7afa91fbc45d68989aec0ada8fd16e5bb34fa90cca4aa")
+  const pay = new VePay("0:4aa0e058021bc0393f4593b863f6972512b00b5fcb49ff7d8ea7f74f2ae92674")
 
 
 
