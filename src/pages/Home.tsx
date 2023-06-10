@@ -33,7 +33,7 @@ const Home: React.FC = () => {
         <Categories />
         <Sorting />
       </section>
-      <Cards title={`${categoryNames[categoryId]} пиццы`} />
+      <Cards title={`${categoryNames[categoryId]} pizzas`} />
       <Pagination />
     </>
   );
