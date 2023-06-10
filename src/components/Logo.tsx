@@ -9,10 +9,10 @@ type LogoProps = {
 const Logo: React.FC<LogoProps> = ({ className }) => {
   return (
     <Link to="/" className={`logo ${className}`}>
-      <img src={logo} alt="Логотип Реакт Пицца" className="logo__image" />
+      <img src={logo} className="logo__image" />
       <div className="logo__block">
-        <h1 className="logo__title">React Pizza</h1>
-        <p className="logo__subtitle">самая вкусная пицца только у нас</p>
+        <h1 className="logo__title">Venom Pizza</h1>
+        <p className="logo__subtitle">the most delicious pizza only with us</p>
       </div>
     </Link>
   );

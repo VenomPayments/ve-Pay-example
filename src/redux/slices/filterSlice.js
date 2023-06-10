@@ -4,18 +4,18 @@ const initialState = {
   categoryId: 0,
 
   categoryNames: [
-    "Все",
-    "Мясные",
-    "Вегетарианские",
-    "Гриль",
-    "Острые",
-    "Закрытые",
+    "All",
+    "Meets",
+    "Vegetarian",
+    "BBQ",
+    "Acute",
+    "Closed",
   ],
 
-  categoryName: 'Все',
+  categoryName: 'All',
 
   sortingItem: {
-    name: "популярности",
+    name: "popularity",
     sortProperty: "rating",
     order: "desc",
   },

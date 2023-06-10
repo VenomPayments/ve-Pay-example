@@ -81,7 +81,7 @@ const Pizza: React.FC = () => {
         </animated.div>
         <div className="pizza-page__blocks">
           <animated.div className="pizza-page__info" style={animationScale}>
-            <h2 className="pizza-page__info-title">Ингредиенты:</h2>
+            <h2 className="pizza-page__info-title">Ingredients:</h2>
             <ul className="pizza-page__info-list">
               {item.info &&
                 item.info.map((element: string, index: number) => (
@@ -95,21 +95,20 @@ const Pizza: React.FC = () => {
             className="pizza-page__block"
             style={animationTranslateRight}
           >
-            <span className="pizza-page__price">{item.price / 100} Venom</span>
+            <span className="pizza-page__price">{item.price / 100} USDT</span>
             <ParamsBlock
               className="pizza-page__params-block"
               types={item.types}
               sizes={item.sizes}
             />
             <button
-              className={`pizza-page__button button button_type_primary ${
-                isCategoryClose ? "button_disabled" : ""
-              }`}
+              className={`pizza-page__button button button_type_primary ${isCategoryClose ? "button_disabled" : ""
+                }`}
               onClick={() => dispatch(addToCart(item))}
               disabled={isCategoryClose ? true : false}
             >
               <span className="card__button-icon">+</span>
-              Добавить в корзину
+              Add to Basket
               {count && <span className="card__button-counter">{count}</span>}
             </button>
           </animated.div>

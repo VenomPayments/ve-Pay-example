@@ -35,13 +35,13 @@ const Cart: React.FC = () => {
       {items.length > 0 ? (
         <>
           <div className="cart__row cart__header">
-            <h1 className="title cart__title">Корзина</h1>
+            <h1 className="title cart__title">Basket</h1>
             <button
               type="button"
               className="cart__button-clear button button_type_primary"
               onClick={() => dispatch(removeAllItems())}
             >
-              Очистить корзину
+              Empty trash
             </button>
           </div>
           <div className="cart__cards">
@@ -51,38 +51,38 @@ const Cart: React.FC = () => {
           </div>
           <div className="cart__row cart__footer">
             <p className="cart__text">
-              Всего пицц:
+              Total pizzas:
               <span className="cart__text-label">{totalCount} шт.</span>
             </p>
             <p className="cart__text">
-              Сумма заказа:
-              <span className="cart__text-label">{totalPrice / 100} Venom</span>
+              Order price:
+              <span className="cart__text-label">{totalPrice / 100} USDT</span>
             </p>
           </div>
           <div className="cart__row cart__footer">
             <Link to="/" className="button button_type_light cart__button">
-              Вернуться назад
+              Come back
             </Link>
             <a
               onClick={() => pay.pay('1', (totalPrice / 100).toString())}
               className="button button_type_primary-outlined cart__button"
             >
-              Оплатить
+              Pay
             </a>
           </div>
         </>
       ) : (
         <div className="cart__empty">
-          <h1 className="title cart__empty-title">Корзина пуста ☹️</h1>
+          <h1 className="title cart__empty-title">Cart is empty ☹️</h1>
           <p className="cart__empty-descr">
-            Вероятней всего, вы не заказывали ещё пиццу. Для того, чтобы
-            заказать пиццу, перейди на главную страницу.
+            You probably haven't ordered pizza yet. In order to
+            order a pizza, go to the main page.
           </p>
           <Link
             to="/"
             className="cart__empty-button button button_type_primary"
           >
-            Вернуться назад
+            Come back
           </Link>
         </div>
       )}

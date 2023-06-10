@@ -28,8 +28,8 @@ const Search: React.FC = () => {
       <Cards
         title={
           items.length > 0
-            ? `Результат поиска: ${searchValue}`
-            : `По запросу ${searchValue} ничего не найдено`
+            ? `Search results ${searchValue}`
+            : `On request ${searchValue} nothing found`
         }
       />
     </div>

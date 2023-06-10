@@ -54,23 +54,17 @@ const Card: React.FC<CardItem> = ({
       </div>
       <img src={images[0]} alt={title} className="card__image" />
       <h2 className="card__title">
-        <Link
-          to={`/pizza/${id}`}
-          className="card__link"
-          onClick={() => dispatch(setItem(cardItem))}
-        >
           {title}
-        </Link>
       </h2>
       <ParamsBlock className="card__params-block" types={types} sizes={sizes} />
       <div className="card__footer">
-        <span className="card__price">от {price / 100} Venom</span>
+        <span className="card__price">from {price / 100} USDT</span>
         <button
           className="card__button button button_type_primary-outlined"
           onClick={() => dispatch(addToCart(cardItem))}
         >
           <span className="card__button-icon">+</span>
-          Добавить
+          Add
           {count && <span className="card__button-counter">{count}</span>}
         </button>
       </div>

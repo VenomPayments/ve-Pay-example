@@ -55,25 +55,19 @@ const CartCard: React.FC<CartCardProps> = ({
         <img src={images[0]} alt={title} className="cart__card-image" />
         <div className="cart__card-content">
           <h2 className="cart__card-title">
-            <Link
-              to={`/pizza/${id}`}
-              className="cart__card-link"
-              onClick={() => dispatch(setItem(cardItem))}
-            >
               {title}
-            </Link>
           </h2>
           <p className="cart__card-subtitle">
-            {typeNames[type]} тесто, {size} см.
+            {typeNames[type]} dough, {size} sm.
           </p>
         </div>
       </div>
       <div className="cart__card-block">
-        <h2 className="cart__card-title">Цена</h2>
-        <p className="cart__card-price cart__card-subtitle">{price / 100} Venom</p>
+        <h2 className="cart__card-title">Price</h2>
+        <p className="cart__card-price cart__card-subtitle">{price / 100} USDT</p>
       </div>
       <div className="cart__card-block">
-        <h2 className="cart__card-title">Количество</h2>
+        <h2 className="cart__card-title">Quantity</h2>
         <div className="cart__row">
           <button
             type="button"

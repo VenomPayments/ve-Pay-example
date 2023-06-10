@@ -14,14 +14,13 @@ const HeaderCart: React.FC = () => {
   return (
     <Link to="/cart" className="header__cart button button_type_primary">
       <div className="header__cart-block">
-        <span className="header__cart-text">{totalPrice / 100} Venom</span>
+        <span className="header__cart-text">{totalPrice / 100} USDT</span>
       </div>
       <div className="header__cart-line"></div>
       <div className="header__cart-block">
         <span className="header__cart-text">
           <img
             src={iconCart}
-            alt="Иконка корзины"
             className="header__cart-icon"
           />
           {totalCount}

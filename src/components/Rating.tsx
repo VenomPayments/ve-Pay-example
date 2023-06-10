@@ -21,7 +21,7 @@ const Rating: React.FC<RatingProps> = ({ className }) => {
           />
         ))}
       </span>
-      {item.reviews} отзывов
+      {item.reviews} feedbacks
     </p>
   );
 };

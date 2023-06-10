@@ -27,7 +27,7 @@ const Cards: React.FC<CardsProps> = ({ title }) => {
       <h2 className="title cards__title">{title}</h2>
       {status === "error" ? (
         <p className="cards__error">
-          Данные не загрузились :( Попробуйте зайти позже
+          Data not loaded :( Try again later
         </p>
       ) : (
         <div className="cards__list">

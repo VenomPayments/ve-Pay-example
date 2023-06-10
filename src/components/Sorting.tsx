@@ -14,9 +14,9 @@ const Sorting: React.FC = () => {
   const dispatch = useDispatch();
   const order: string = sortingItem.order.includes("asc") ? "desc" : "asc";
   const sortingItems: SortType[] = [
-    { name: "популярности", sortProperty: "rating", order },
-    { name: "цене", sortProperty: "price", order },
-    { name: "алфавиту", sortProperty: "title", order },
+    { name: "popularity", sortProperty: "rating", order },
+    { name: "prices", sortProperty: "price", order },
+    { name: "alphabet", sortProperty: "title", order },
   ];
   const sortingRef = React.useRef<HTMLSpanElement>(null);
 
@@ -47,7 +47,7 @@ const Sorting: React.FC = () => {
             : "sorting__text_type_desc"
         }`}
       >
-        Сортировка по:
+      Sort by:
         <span
           className="sorting__text-link"
           onClick={() => setIsVisible(!isVisible)}
