@@ -13,5 +13,5 @@ COPY ./ .
 RUN npm run build
 
 FROM nginx:latest as prod
-COPY --from=build /app/dist /www/
+COPY --from=build /app/build /www/
 COPY ./etc/nginx.conf /etc/nginx/conf.d/default.conf
